@@ -1,0 +1,309 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(218, 28%, 13%);
+    font-size: 17px;
+    color: hsl(0, 0%, 100%)
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    background-color: hsl(217, 28%, 15%);
+
+}
+
+.fLogo {
+    height: 50px;
+    width: 160px;
+}
+
+.topList {
+    display: flex;
+    align-items: center;
+
+}
+
+#topList1,
+#topList2 {
+    padding-right: 40px;
+
+}
+
+
+
+h2 {
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+
+h3 {
+    font-weight: 700;
+}
+
+
+.topSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: hsl(217, 28%, 15%) url("bg-curvy-desktop.svg") bottom no-repeat;
+    background-size: 100% 300px;
+
+}
+
+.topSection img {
+    height: 500px;
+    width: 650px;
+}
+
+.topSection h2 {
+    width: 720px;
+    margin: 20px;
+}
+
+.topSection p {
+    width: 600px;
+    margin: 20px;
+
+}
+
+
+.topSection button {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px 0px 75px 0px;
+    cursor: pointer;
+    background: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.midSection1,
+.midSection2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px 40px;
+
+}
+
+.midSection1 p,
+.midSection2 p {
+    margin: 40px;
+
+}
+
+.summarySect {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.summarySectImg img {
+    width: 500px;
+    height: 350px;
+    padding: 40px 40px;
+
+}
+
+.summarySect h2 {
+    width: 300px;
+    margin-top: 100px;
+}
+
+.summarySect p {
+    width: 600px;
+    text-align: left;
+}
+
+.summarySect a {
+    text-align: left;
+    color: hsl(176, 68%, 64%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.summarySect a:active {
+    color: hsl(0, 100%, 63%)
+}
+
+.summarySect a:hover {
+    color: yellowgreen;
+}
+
+.summarySectText img {
+    vertical-align: middle;
+
+
+}
+
+.CEOSect {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    padding: 20px;
+
+}
+
+.CEOSummary {
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 10px;
+    padding: 35px 20px;
+    position: relative
+}
+
+.CEOSummary:first-child::before {
+    position: absolute;
+    content: url("bg-quotes.png");
+    top: -38px;
+    left: -15px;
+    z-index: -1;
+}
+
+.CEOImg {
+    display: flex
+}
+
+
+.CEOImg img {
+    margin-top: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 12%;
+    width: 16%;
+}
+
+.CEOProfile h4 {
+    margin: 0 0;
+    padding-top: 40px;
+
+}
+
+.CEOProfile p {
+    font-size: 12px;
+    margin: 0 0;
+
+}
+
+main {
+    position: relative;
+    padding-bottom: 250px;
+
+}
+
+.accessSect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 10px;
+    padding: 40px 65px;
+    margin-top: 100px;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+}
+
+.accessSect h3 {
+    font-size: 155%;
+}
+
+.accessSect p {
+    width: 600px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.accessSect Input {
+    width: 350px;
+    height: 35px;
+    border-radius: 55px;
+    padding-left: 10px;
+    margin-right: 10px;
+
+}
+
+.accessSect button {
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+
+}
+
+.accessSect div {
+    display: flex;
+    align-content: center;
+
+}
+
+.footerImgSect img {
+    display: flex;
+    padding-top: 100px;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.footerSect {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: hsl(216, 53%, 9%);
+
+}
+
+.locationSect {
+    width: 600px;
+    padding-left: 150px;
+}
+
+.locationSect p {
+    justify-content: center;
+    text-align: left;
+}
+
+
+#contact {
+    font-weight: 700;
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 8px;
+    }
+
+    h2 {
+        font-size: 18px
+    }
+
+    .topnav {
+        padding: 20px 15px;
+
+    }
+
+    .fLogo {
+        height: 22px;
+        width: 75px;
+    }
+
+    .
+}
